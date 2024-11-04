@@ -1,5 +1,5 @@
 import pytest
-from src.ej21_04 import comprobar_entero, comprobar_numero
+from src.condicionales.ej21_04 import comprobar_entero, comprobar_numero
 
 def test_entero():
     assert comprobar_entero("5") == True

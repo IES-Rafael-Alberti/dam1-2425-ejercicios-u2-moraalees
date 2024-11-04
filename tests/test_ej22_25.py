@@ -1,5 +1,5 @@
 import pytest
-from src.ej22_25 import contador
+from src.bucles.ej22_25 import contador
 
 def test_palabras():
     assert contador("hyundai es porquería") == "porquería"

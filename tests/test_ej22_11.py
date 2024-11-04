@@ -1,5 +1,5 @@
 import pytest
-from src.ej22_11 import ensenar_letras
+from src.bucles.ej22_11 import ensenar_letras
 
 def test_palabra():
     assert ensenar_letras("5") == "5"

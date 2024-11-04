@@ -1,5 +1,5 @@
 import pytest
-from src.ej22_17 import comprobar_entero, dividir_sumar_numero
+from src.bucles.ej22_17 import comprobar_entero, dividir_sumar_numero
 
 def test_entero():
     assert comprobar_entero("5") == True

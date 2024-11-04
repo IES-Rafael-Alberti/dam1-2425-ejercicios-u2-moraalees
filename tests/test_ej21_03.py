@@ -1,5 +1,5 @@
 import pytest
-from src.ej21_03 import comprobar_cero, dividir_numeros
+from src.condicionales.ej21_03 import comprobar_cero, dividir_numeros
 
 def test_division():
     assert dividir_numeros(8, 4) == 2.00

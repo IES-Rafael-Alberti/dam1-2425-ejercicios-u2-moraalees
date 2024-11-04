@@ -1,5 +1,5 @@
 import pytest
-from src.ej21_02 import intro_contraseña
+from src.condicionales.ej21_02 import intro_contraseña
 
 def test_contrasena():
     assert intro_contraseña("contraseña") == False

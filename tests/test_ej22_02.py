@@ -1,5 +1,5 @@
 import pytest
-from src.ej22_02 import comprobar_edad, contar_anios
+from src.bucles.ej22_02 import comprobar_edad, contar_anios
 
 def test_edad():
     assert comprobar_edad("5") == True

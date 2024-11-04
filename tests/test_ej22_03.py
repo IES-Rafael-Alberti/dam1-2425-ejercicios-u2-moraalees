@@ -1,5 +1,5 @@
 import pytest
-from src.ej22_03 import comprobar_entero, contador_numeros
+from src.bucles.ej22_03 import comprobar_entero, contador_numeros
 
 def test_entero():
     assert comprobar_entero("5") == True

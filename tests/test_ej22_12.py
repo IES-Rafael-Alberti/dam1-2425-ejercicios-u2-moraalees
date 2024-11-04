@@ -1,5 +1,5 @@
 import pytest
-from src.ej22_12 import comprobar_letra, letra_en_frase
+from src.bucles.ej22_12 import comprobar_letra, letra_en_frase
 
 def test_letra():
     assert comprobar_letra("4") == False
