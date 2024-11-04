@@ -20,6 +20,8 @@ def buscar_letra(frase: str, letra: str):
         elif letra == caracter:
             posicion += 1
             print(f"\nLa {letra} coincide en el puesto {posicion} de la frase, ya que es una {caracter} igual.")
+    
+    return posicion
         
 
 

@@ -11,6 +11,8 @@ def contador(frase: str):
 
     print(f"La palabra más larga es {palabra_mas_larga}.")
     print(f"Has escrito {cantidad_palabras} palabra/s.")
+    
+    return palabra_mas_larga
 
 
 def main():

@@ -6,7 +6,8 @@ def comprobar_entero(numero: str) -> bool:
 
 
 
-def contador_numeros(cont: int, numero: int):
+def contador_numeros(numero: int):
+    cont = 1
     while cont < numero:
             
         for i in range(1, numero, 2):
@@ -14,6 +15,7 @@ def contador_numeros(cont: int, numero: int):
             cont = cont + 2
                 
     print(f"{numero}.")
+    return numero
 
 
 
@@ -25,8 +27,7 @@ def main():
     
     numero = int(numero)
     
-    cont = 1
-    contador_numeros(cont, numero)
+    contador_numeros(numero)
     
     
 if __name__ == "__main__":

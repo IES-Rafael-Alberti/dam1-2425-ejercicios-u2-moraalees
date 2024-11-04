@@ -6,7 +6,7 @@ def comprobar_entero(numero: str) -> bool:
 
 
 
-def dividir_sumar_numero(numero: str):
+def dividir_sumar_numero(numero: str) -> int:
     sumatorio = 0
     
     for caracter in numero:
@@ -14,7 +14,9 @@ def dividir_sumar_numero(numero: str):
         sumatorio = caracter + sumatorio
         caracter = str(caracter)
     
-    return print(f"La suma de todos los números escritos en {numero} es {sumatorio}")
+    print(f"La suma de todos los números escritos en {numero} es {sumatorio}")
+
+    return sumatorio
 
 
 

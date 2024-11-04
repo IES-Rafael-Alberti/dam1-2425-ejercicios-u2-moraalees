@@ -10,6 +10,7 @@ def contador_veces(numero: int):
     for i in range(1, numero + 1):
         print("*" * i)
 
+
 def main():
     numero = input("Escriba un número entero positivo: ")
     

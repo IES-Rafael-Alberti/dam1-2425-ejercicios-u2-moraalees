@@ -1,15 +1,18 @@
-def intro_contraseña(password: str, contraseña: str):
-    if password == contraseña.lower():
-        return print("¡Increíble que hayas acertado la contraseña! (Era muy rebuscada eeeh)")
+def intro_contraseña(contrasena: str):
+    password = "contrasena"
+    if password == contrasena.lower():
+        return True
     else:
-        return print("Qué va, esa no es la contraseña...")
+        return False
 
 
 def main():
-    password = "contraseña"
-    contraseña = input("Escriba la contraseña: ")
-    intro_contraseña(password, contraseña)
-    
+    contrasena = input("Escriba la contrasena: ")
+    if intro_contraseña(contrasena) == True:
+        print("Increible que hayas acertado la contrasena! (Era muy rebuscada eeeh).")
+        
+    elif intro_contraseña(contrasena) == False:
+        print("Que va, esa no es la contrasena...")
     
 if __name__ == "__main__":
     main()

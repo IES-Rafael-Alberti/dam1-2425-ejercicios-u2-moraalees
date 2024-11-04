@@ -11,7 +11,9 @@ def letra_en_frase(frase: str, letra: str):
     for cantidad in frase:
         if cantidad == letra:
             cont += 1
-    print(f"La {letra} aparece en la frase {cont} veces.") 
+    print(f"La {letra} aparece en la frase {cont} veces.")
+    
+    return cont
 
 
 

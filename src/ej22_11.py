@@ -1,6 +1,8 @@
 def ensenar_letras(palabra: str):
     for i in palabra:
         print(i)
+    
+    return palabra
 
 
 def main():

@@ -5,14 +5,7 @@ def comprobar_edad(edad: str) -> bool:
     return False
 
 
-def main():
-    edad = input("¿Cuántos años tienes?: ")
-    
-    while not comprobar_edad(edad):
-        edad = input("No creo que eso sea tu edad, escríbala bien: ")
-    
-    edad = int(edad)
-    
+def contar_anios(edad: int) -> int:
     cont = 0
     while cont < edad:
         
@@ -21,6 +14,19 @@ def main():
             cont += 1
             
     print(f"{edad}.")
+    return edad
+    
+
+def main():
+    edad = input("¿Cuántos años tienes?: ")
+    
+    while not comprobar_edad(edad):
+        edad = input("No creo que eso sea tu edad, escríbala bien: ")
+    
+    edad = int(edad)
+    
+    contar_anios(edad)
+    
         
     
 if __name__ == "__main__":
