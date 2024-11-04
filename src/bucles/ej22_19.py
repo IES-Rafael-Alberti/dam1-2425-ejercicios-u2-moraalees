@@ -1,52 +1,40 @@
 def mostrar_menu():
-    print("¡BIENVENIDO AL PROGRAMA!")
-    print("Escriba 1 para comenzar el programa.")
-    print("Escriba 2 para imprimir el listado.")
-    print("Escriba 3 para finalizar el programa.")
-   
-   
-def comprobar_numero(numero: str):
-    while numero != "1" and numero != "2" and numero != "3":
-        print("*ERROR* - No puedes introducir eso, el número debe ser bien 1, 2 o 3.")
-        numero = input("")
+    print("\nMenú del programa:")
+    print("1 - Comenzar programa")
+    print("2 - Imprimir listado")
+    print("3 - Finalizar programa")
+
+
+def ejecutar_opcion(opcion):
+    if opcion == 1:
+        print("Programa comenzado.")
         
-    return numero
-
-
-def comenzar_programa():
-    # NO SE
-    
-    
-def imprimir_listado():
-    # NO SE
-    
-
-def finalizar_programa():
-    print("¡Un placer!")
-
-
-
-def jugar(numero: str):
-    if numero == "1":
-        comenzar_programa()
+    elif opcion == 2:
+        print("Listado:")
         
-    if numero == "2":
-        imprimir_listado()
+    elif opcion == 3:
+        print("Bye, bye.")
         
-    if numero == "3":
-        finalizar_programa()
-    
+    else:
+        print("Opción incorrecta. Por favor, elija una opción válida.")
+
 
 
 def main():
-    mostrar_menu()
-    
-    numero = input("")
-    
-    comprobar_numero(numero)
-    
-    jugar(numero)
-    
-    
+    while True:
+        mostrar_menu()
+        try:
+            opcion = int(input("Seleccione una opción (1, 2 o 3): "))
+            
+            if opcion == 3:
+                ejecutar_opcion(opcion)
+                break
+            ejecutar_opcion(opcion)
+            
+        except ValueError:
+            print("Entrada no válida. Por favor, ingrese un número.")
+
+
+
 if __name__ == "__main__":
     main()
